@@ -46,6 +46,14 @@ int GetInputData(double& S0, double&  U, double& D, double& R)
   return 0;
 }
 
+// swap methodology by reference 
+  void Interchange(double& x, double& y)
+{
+  double temp = x;
+  x = y;
+  y = temp;
+}
+
 
 int main()
 {
@@ -54,6 +62,7 @@ int main()
 
   if(GetInputData(S0, U, D, R) == 1) return 1;
 
+  Interchange(U, D);
   // compute risk-neutral probability 
   std::cout << "q = "<< RiskNeutralProb(U, D, R) << std::endl;
   
