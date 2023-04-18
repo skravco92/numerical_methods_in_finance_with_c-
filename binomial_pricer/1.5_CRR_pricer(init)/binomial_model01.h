@@ -1,5 +1,5 @@
-#ifndef binomial_model_h
-#define binomial_model_h 
+#ifndef binomial_model01_h
+#define binomial_model01_h 
 
 // compute risk-neutral probability 
 double RiskNeutralProb(double U, double D, double R);

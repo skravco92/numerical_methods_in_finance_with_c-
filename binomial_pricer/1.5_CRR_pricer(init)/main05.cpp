@@ -16,7 +16,7 @@ int main()
   std::cout << "Enter Call Option Data: " << std::endl;
   GetInputData(N, K);
 
-  std::cout  << "Europian Call Option Price: " << 
+  std::cout  << "European Call Option Price: " << 
     PriceByCRR(S0, U, D, R, N, K) << std::endl; 
   return 0;
 }
